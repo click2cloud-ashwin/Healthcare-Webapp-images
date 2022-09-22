@@ -1,0 +1,13 @@
+.mute {
+  font-family: "Segoe MDL2 Assets";
+  font-size: 1.875rem;
+  color: white;
+  cursor: pointer;
+}
+
+.position {
+  z-index: 1;
+  width: 14.375rem;
+  display: flex;
+  flex-direction: row;
+}

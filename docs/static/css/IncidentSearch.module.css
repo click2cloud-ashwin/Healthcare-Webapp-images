@@ -1,0 +1,73 @@
+.incidentSearch {
+  position: relative;
+  top: 63px;
+  left: 46px;
+  height: 100%;
+}
+
+.incidentSearchCover {
+  width: 100%;
+  height: 100%;
+}
+
+.gotoRio {
+  position: absolute;
+  top: 63px;
+  right: 0;
+  cursor: pointer;
+  width: 300px;
+  height: 200px;
+  z-index: 200000;
+}
+
+.arrow{
+  /* height: 10rem; */
+  display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+}
+
+.gotoGraphSearch{
+    position: absolute;
+    top: 128px;
+    left: 270px;
+    cursor: pointer;
+    width: 20px;
+    height:20px;
+    z-index: 200000;
+}
+
+.gotoAccidentSearch {
+  position: absolute;
+  top: 70px;
+  left: 350px;
+  cursor: pointer;
+  transform: scale(0.7);
+  width: 60px;
+  height: 60px;
+  z-index: 200000;
+}
+
+.gotoAccidentSearch1 {
+  position: absolute;
+  top: 123px;
+  left: 252px;
+  cursor: pointer;
+  transform: scale(0.6);
+  width: 60px;
+  height: 60px;
+  z-index: 2000000;
+}
+
+.gotoAccidentSearch2 {
+  position: absolute;
+  top: 70px;
+  left: 350px;
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  z-index: 200000;
+  transform: scale(0.9);
+}

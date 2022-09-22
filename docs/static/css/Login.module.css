@@ -1,0 +1,94 @@
+.loginBackground {
+    background-image: url("https://jnjpoc.blob.core.windows.net/webassets/login.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.button {
+    height: 50px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    color: white;
+}
+
+.login {
+    background-color: #43b5d2;
+}
+
+.signup {
+    background-color: #3180c9;
+}
+
+.input {
+    font-size: 30px;
+    height: 50px;
+    line-height: 50px;
+}
+
+.dialogue {
+    width: 420px;
+    padding: 60px;
+    padding-top: 180px;
+    /* padding-bottom:100px; */
+    display: flex;
+    background-image: url("https://jnjpoc.blob.core.windows.net/webassets/loginDialogue.png");
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+    filter: drop-shadow(16px 16px 10px rgba(0, 0, 0, 0.5));
+}
+
+@media (max-width: 900px) {
+    .loginBackground {
+        width: 100vw;
+        height: 100vh;
+        background-size: contain;
+        background-position: top center;
+        background-image: url("https://jnjpoc.blob.core.windows.net/webassets/login-mobile.jpg");
+    }
+    .dialogue {
+        width: 320px;
+        padding: 40px;
+        padding-top: 230px;
+        background-image: none;
+    }
+    input {
+        line-height: 30px !important;
+        padding-top: 6px !important;
+        padding-bottom: 6px !important;
+    }
+    .input {
+        margin-top: 10px;
+        margin-bottom: 0;
+        filter: none;
+    }
+    .button {
+        height: 40px;
+        margin-top: 10px;
+    }
+    @media (orientation: landscape) {
+        .loginBackground {
+            background-size: cover;
+            background-image: url("https://jnjpoc.blob.core.windows.net/webassets/login-mobile-landscape.jpg");
+        }
+        .dialogue {
+            align-self: flex-end;
+            /* justify-self: flex-start; */
+            position: relative;
+            padding-top: 80px;
+            left: 10px;
+        }
+    }
+}

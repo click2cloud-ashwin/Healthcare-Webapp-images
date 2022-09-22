@@ -1,0 +1,98 @@
+.availability {
+  top: 130px;
+}
+
+.performance {
+  top: 328px;
+}
+.quality {
+  top: 529px;
+  
+}
+
+.report {
+  z-index: 500;
+  right:40px;
+}
+
+.factory {
+  width: 59px;
+  height: 51px;
+  position: absolute;
+  z-index: 20;
+  cursor: pointer;
+  left: 449px;
+  top: 679px;
+}
+
+.tile {
+  position: absolute;
+  top: 670px;
+  left: 180px;
+  cursor: pointer;
+  width: 60px;
+  height: 60px;
+  transform: scale(0.7);
+  z-index: 200000;
+}
+
+.dot {
+  width: 207px;
+  height: 73px;
+  position: absolute;
+  background-color: transparent;
+  top: 644px;
+  z-index: 20;
+  cursor: pointer;
+}
+
+.label {
+  width: auto;
+  color: white;
+  text-align: center;
+}
+
+.miami {
+  left: 69px;
+}
+
+.stuttgart {
+  right: 490px;
+}
+
+.kyoto {
+  right: 31px;
+}
+
+.sanDiego {
+  left: 530px;
+}
+
+.miami.dot {
+  top: 305px;
+  left: 320px;
+}
+
+.stuttgart.dot {
+  top: 177px;
+  left: 749px;
+}
+
+.map {
+  position: relative;
+  height: 591px;
+  width: 1432px;
+  top: 64px;
+  left: 70px;
+}
+
+.map-shadow {
+  position: absolute;
+  pointer-events: none;
+  z-index: 99;
+}
+
+.global-page-background {
+  pointer-events: none;
+  z-index: 99;
+}

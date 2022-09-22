@@ -1,0 +1,324 @@
+.machine {
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.machinePageContainer {
+  overflow: hidden !important;
+  top: 3.9375rem;
+  left: 3rem;
+  width: calc(100vw - 3rem);
+  height: calc(100vh - 3.9375rem);
+  position: relative !important;
+}
+
+.grid {
+  position: absolute;
+  top: 1.875rem;
+  left: 1.875rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-areas:
+    'titleArea titleArea titleArea titleArea'
+    'assetArea innerGridAlertsAreaTemperatureArea liveFeedArea liveFeedArea'
+    'overviewArea jobAxesMovementArea machineVibrationArea maintenanceSchedulingArea';
+  gap: 0.5rem;
+  margin: -1rem;
+  z-index: 101;
+}
+
+.pageTitle {
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-style: italic;
+  font-size: 3.75rem;
+  margin-top: 0rem;
+  margin-bottom: 0rem;
+}
+
+.subPageTitle {
+  color: #2a75b4;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: lighter;
+  font-style: italic;
+  margin-top: 0rem;
+  margin-bottom: 0rem;
+}
+
+.titleArea {
+  grid-area: titleArea;
+  padding-left: 0.5rem;
+}
+
+.assetArea {
+  grid-area: assetArea;
+}
+
+.innerGridAlertsAreaTemperatureArea {
+  display: grid;
+  /* grid-template-columns: repeat(autofill, minmax(25rem, 1fr)); */
+  grid-template-columns: 1fr;
+  gap: 0.05rem;
+  align-items: stretch;
+  z-index: 101;
+  grid-area: innerGridAlertsAreaTemperatureArea;
+}
+
+.liveFeedArea {
+  grid-area: liveFeedArea;
+}
+
+.overviewArea {
+  grid-area: overviewArea;
+}
+
+.jobAxesMovementArea {
+  grid-area: jobAxesMovementArea;
+}
+
+.machineVibrationArea {
+  grid-area: machineVibrationArea;
+}
+
+.maintenanceSchedulingArea {
+  grid-area: maintenanceSchedulingArea;
+}
+
+.volumeController {
+  position: absolute;
+  bottom: 1.875rem;
+  right: 1.875rem;
+  z-index: 10;
+}
+
+.videoContainer {
+  position: relative;
+  display: block;
+  width: 56.125rem;
+  height: 25.0625rem;
+  overflow: hidden;
+}
+
+.machine-video {
+  width: 56.25rem;
+}
+
+.liveFeedTitle {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.popupContentContainer {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.popupContent {
+  width: 90%;
+  max-height: 90%;
+  object-fit: contain;
+  flex: 1;
+}
+
+.popupContent2{
+  width: 115%;
+  max-height: 105%;
+  object-fit: contain;
+  flex: 1;
+}
+.popupContent1 {
+  width: 100%;
+  max-height: 100%;
+  /* margin-bottom: 5px; */
+  flex: 1;
+}
+.stretch {
+  align-self: stretch;
+}
+
+.popup {
+  position: relative;
+  z-index: 100;
+}
+
+.mute {
+  font-family: 'Segoe MDL2 Assets';
+  position: absolute;
+  top: 3.4375rem;
+  left: 3.125rem;
+  font-size: 1.875rem;
+  color: white;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.vol {
+  font-family: 'Segoe MDL2 Assets';
+  position: absolute;
+  top: 3.4375rem;
+  left: 0.625rem;
+  font-size: 1.25rem;
+  line-height: 1.875rem;
+  color: white;
+  cursor: pointer;
+  z-index: 10;
+  font-weight: 600;
+}
+
+.volUp {
+  left: 5.625rem !important;
+}
+
+.cardInnerContainer {
+  position: relative;
+  width: 27.3125rem;
+  height: auto;
+  cursor: pointer;
+  z-index: 10;
+  display: flex;
+  flex: auto;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: space-between;
+  color: white;
+  background-color: #041c1c;
+}
+
+.cardInnerItem {
+  height: 2.4375rem;
+  line-height: 2.4375rem;
+  margin: 0 1.25rem;
+  padding: 0 0.625rem;
+  border-bottom: 0.0625rem solid grey;
+  display: flex;
+  flex: auto;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 0.875rem;
+}
+
+.overviewItem {
+  height: 3rem;
+}
+
+.buttons {
+  align-self: flex-start;
+  margin-top: 1.25rem;
+  margin-left: 1.25rem;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.button {
+  width: 13.1rem;
+  height: 2.5rem;
+  line-height: 2.5rem;
+  color: white;
+  text-align: center;
+  cursor: pointer;
+  z-index: 101;
+  background-color: #001727;
+  margin-right: 0.35rem;
+  font-size: 0.873rem;
+}
+.selected {
+  background-color: #3472bd;
+}
+
+.offLoad {
+  position: fixed;
+  top: -1000vh;
+  left: -1000vw;
+}
+.offLoad {
+  position: fixed;
+  top: -1000vh;
+  left: -1000vw;
+}
+.show {
+  pointer-events: all !important;
+  opacity: 1 !important;
+}
+
+.hide {
+  pointer-events: none;
+  opacity: 0;
+}
+
+.predMainText {
+  font-weight: bold;
+  font-style: italic;
+  font-size: 1rem;
+}
+
+.maintenanceDescription {
+  text-align: right;
+  margin-top: 0rem;
+  margin-bottom: 0rem;
+  line-height: 1rem;
+  align-self: stretch;
+}
+.customLineHeight {
+  margin-bottom: 0.5rem;
+  border-bottom: none;
+}
+
+.red {
+  color: #f05736;
+}
+
+.orange {
+  color: #2a75b4;
+}
+
+.predictiveMaintenanceOverlayButton {
+  cursor: pointer;
+  z-index: 500;
+}
+
+.machineImageDevice {
+  margin-top: 1rem;
+  margin-left: 1.25rem;
+  margin-right: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.assetButtonContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+}
+
+.assetButtonItem {
+  font-size: 0.875rem;
+  margin-top: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+}
+p,
+.assetButtonItem {
+  margin-top: 0.625rem;
+}
+
+.NavigationButton {
+  cursor: pointer;
+  position: relative;
+  z-index: 999;
+  top: -2.7rem;
+  left: 22rem;
+  width: 25px;
+}

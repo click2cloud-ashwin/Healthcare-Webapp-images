@@ -1,0 +1,56 @@
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 70px;
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: flex-start;
+  pointer-events: all;
+  z-index: 200;
+}
+
+.logo {
+  height: 100%;
+  width: 480px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  object-fit: none;
+  margin-left:10px;
+}
+
+.button {
+  height: 100%;
+  width: 5.0625rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  object-fit: none;
+}
+
+.right {
+  margin-left: auto;
+}
+
+.button:hover {
+  background-color: #102e4b;
+}
+
+.persona {
+  height: 3.125rem;
+  border-radius: 1.5625rem;
+  z-index: 10;
+}
+
+.disabled {
+  cursor: initial !important;
+}
+
+.searchbox{
+  height: 100%;
+}

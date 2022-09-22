@@ -1,0 +1,48 @@
+.background {
+  position: relative;
+  top: 63px;
+  left: 48px;
+  height: calc(100vh - 63px);
+  width: calc(100% - 49px);
+  overflow-y: auto;
+}
+
+.diagramContainer {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  width: auto;
+  height: 85%;
+}
+
+.diagram {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+
+.buttons {
+  align-self: flex-start;
+  margin-top: 27px;
+  margin-left: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.button {
+  width: 250px;
+  height: 40px;
+  line-height: 40px;
+  color: white;
+  text-align: center;
+  cursor: pointer;
+  z-index: 101;
+  background-color: #001727;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+.selected {
+  background-color: #3472bd;
+}

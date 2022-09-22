@@ -1,0 +1,70 @@
+.finance {
+  position: relative;
+  top: 63px;
+  left: 46px;
+}
+.finance23 {
+  position: relative;
+  /* top: 63px; */
+  /* left: 46px; */
+  min-height: 500px;
+}
+
+.financeCover {
+  width: 100%;
+  height: auto;
+}
+/*Below to remove TEMP styles for GIF*/
+.background {
+  position: relative;
+  top: 63px;
+  left: 48px;
+  height: calc(100vh - 63px);
+  width: calc(100% - 49px);
+  overflow-y: scroll;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.example::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.example {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.diagramContainer {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  width: auto;
+  height: auto;
+}
+
+.diagram {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+
+.gotToSafetyReport {
+  position: absolute;
+  top: 170px;
+  right: -70px;
+  cursor: pointer;
+  width: 300px;
+  height: 200px;
+  z-index: 200000;
+}
+
+.arrow {
+  height: 10rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+}
+

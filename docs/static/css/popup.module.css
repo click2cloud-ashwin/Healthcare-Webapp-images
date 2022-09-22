@@ -1,0 +1,93 @@
+.cover {
+  position: fixed;
+  z-index: 200;
+  left: 0;
+  top: 0;
+  width: 1000%;
+  height: 1000%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.cover1 {
+  position: fixed;
+  z-index: 200;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+
+.banner {
+  margin: 0;
+  align-self: flex-start;
+  left: 0;
+  top: 0;
+  height: 50px;
+  width: 100%;
+  overflow: visible;
+  background-repeat: no-repeat;
+  line-height: 50px;
+  padding-left: 20px;
+  font-size: 22px;
+  color: white;
+  font-style: italic;
+  font-weight: 500;
+}
+
+.popup {
+  left: 10%;
+  top: 2%;
+  width: calc(100% - 320px);
+  height: 95%;
+  z-index: 300;
+  position: fixed;
+  background-color: #000b1a;
+  outline: solid white 1px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  overflow: hidden;
+}
+
+.popup1 {
+  left: 250px;
+  top: 20%;
+  width: calc(90% - 310px);
+  height: 500px;
+  z-index: 300;
+  position: fixed;
+  background-color: #000b1a;
+  outline: solid white 1px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  overflow: hidden;
+  padding:0;
+}
+
+.dismiss {
+  position: absolute;
+  text-align: right !important;
+  top: 10px;
+  right: 50px;
+  font-family: "Segoe MDL2 Assets";
+  font-size: 15px;
+  line-height: 15px !important;
+  background-color: transparent !important;
+}
+
+.button {
+  border: none;
+  width: 10px;
+  height: 10px;
+  color: white;
+  text-align: center;
+  line-height: 10px;
+  cursor: pointer;
+  z-index: 101;
+  background-color: #002e2e;
+}
